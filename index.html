@@ -3,13 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Can Karaman</title>
+    <title>Hi!</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/4727be9392.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
   </head>
   <body class="bg-main">
     <!--     <1!-- #f7f8f9 --1> -->
@@ -27,30 +31,26 @@
               <div class="d-flex flex-wrap flex-row justify-content-between align-items-center">
                 <h2>Can Karaman</h2>
                 <div>
-                  <a class="text-white" href="#">
+                  <a class="text-white" href="https://www.linkedin.com/in/cankaraman/">
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                </div>
+                <div>
+                  <a class="text-white" href="https://github.com/cankaraman">
                     <i class="fab fa-github" aria-hidden="true"></i>
                   </a>
                 </div>
                 <div>
-                  <a class="text-white" href="#">
+                  <a class="text-white" href="https://stackoverflow.com/users/11311964/can">
                     <i class="fab fa-stack-overflow" aria-hidden="true"></i>
                   </a>
                 </div>
-
                 <div>
-                  <a class="text-white" href="#">
-                    <i class="fab fa-linkedin" aria-hidden="true"></i>
-                  </a>
-                </div>
-
-                <div>
-                  <a class="text-white" href="#">
+                  <a class="text-white" href="mailto:ycankaraman@gmail.com">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
                   </a>
                 </div>
-
               </div>
-
             </div>
             <div class="bg-dark">
               <p class="text-white text-center">Software Engineer - Research Assistant</p>
@@ -93,11 +93,11 @@
             <div class="card">
               <div class="card-header bg-main">
                 <h5>
-                  <a href="#collapse2" data-parent="#accordion" data-toggle="collapse">
+                  <a class="btn pr-5" href="#collapse2" data-parent="#accordion" data-toggle="collapse">
                     project 2
                   </a>
                 </h5>
-                  <h6 class="card-subtitle text-muted">brief desc.</h6>
+                <h6 class="ml-3 card-subtitle text-muted">brief desc.</h6>
               </div>
 
               <div id="collapse2" class="collapse show">
@@ -135,6 +135,29 @@
 
         </div>
       </div>
+      <div class="row mt-2 invisible">
+        <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12 justift-content-center">
+          <footer id="main-footer" class="p-2 bg-dark text-white rounded">
+            <div class="row">
+              <div class="col-md-6">
+                <a href="#" class="btn btn-outline-light">
+                  <i class="fas fa-cloud"></i> Download Resume
+                </a>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+
     </div>
+    <div class="text-center bg-dark text-light p-0 m-0">
+
+      <p class="p-0 m-0"><small>&#169; <span id="year" class="text-small"></span> Can Karaman </small></p>
+    </div>
+    <script>
+      // Get the current year for the copyright
+      $('#year').text(new Date().getFullYear());
+    </script>
+
   </body>
 </html>
