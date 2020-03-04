@@ -14,9 +14,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="manifest" href="img/site.webmanifest">
+        <!-- #f7f8f9 -->
   </head>
   <body class="bg-main">
-    <!--     <1!-- #f7f8f9 --1> -->
     <div class="container">
       <header id="main-header">
         <div class="row">
@@ -59,7 +59,6 @@
           </div>
         </div>
       </header>
-
       <div class="row">
         <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12 justift-content-center">
           <h2>about me</h2>
@@ -77,7 +76,7 @@
             <div class="card">
               <div class="card-header bg-main">
                 <h5>
-                  <button class="pl-0 btn btn-block text-left" href="#collapse1" data-parent="#accordion" data-toggle="collapse">
+                  <button class="pl-0 btn btn-block text-left text-info" data-target="#collapse1" data-parent="#accordion" data-toggle="collapse">
                     project 1
                   </button>
                 </h5>
@@ -91,11 +90,10 @@
                 </div>
               </div>
             </div>
-
             <div class="card">
               <div class="card-header bg-main">
                 <h5>
-                  <button class="pl-0 btn btn-block text-left" href="#collapse2" data-parent="#accordion" data-toggle="collapse">
+                  <button class="pl-0 btn btn-block text-left text-info" data-target="#collapse2" data-parent="#accordion" data-toggle="collapse">
                     project 2
                   </button>
                 </h5>
@@ -112,7 +110,7 @@
             <div class="card">
               <div class="card-header bg-main">
                 <h5>
-                  <button class="pl-0 btn btn-block text-left" href="#collapse3" data-parent="#accordion" data-toggle="collapse">
+                  <button class="pl-0 btn btn-block text-left text-info" data-target="#collapse3" data-parent="#accordion" data-toggle="collapse">
                     project 3
                   </button>
                 </h5>
@@ -129,7 +127,7 @@
             <div class="card">
               <div class="card-header bg-main">
                 <h5>
-                  <button class="pl-0 btn btn-block text-left" href="#collapse4" data-parent="#accordion" data-toggle="collapse">
+                  <button class="pl-0 btn btn-block text-left text-info" data-target="#collapse4" data-parent="#accordion" data-toggle="collapse">
                     project 4
                   </button>
                 </h5>
@@ -146,7 +144,7 @@
             <div class="card">
               <div class="card-header bg-main">
                 <h5>
-                  <button class="pl-0 btn btn-block text-left" href="#collapse5" data-parent="#accordion" data-toggle="collapse">
+                  <button class="pl-0 btn btn-block text-left text-info" data-target="#collapse5" data-parent="#accordion" data-toggle="collapse">
                     project 5
                   </button>
                 </h5>
@@ -163,7 +161,7 @@
             <div class="card">
               <div class="card-header bg-main">
                 <h5>
-                  <button class="pl-0 btn btn-block text-left" href="#collapse6" data-parent="#accordion" data-toggle="collapse">
+                  <button class="pl-0 btn btn-block text-left text-info" data-target="#collapse6" data-parent="#accordion" data-toggle="collapse">
                     project 6
                   </button>
                 </h5>
@@ -178,10 +176,6 @@
               </div>
             </div>
           </div>
-
-
-
-
         </div>
       </div>
       <div class="row mt-2 invisible">
@@ -198,14 +192,42 @@
         </div>
       </div>
     </div>
-    <div class="text-center bg-secondary text-light p-0 m-0">
-      <p class="p-0 m-0"><small class="text-center">&#169; <span id="year" class="text-small"></span></small></p>
+    <div class="d-flex mb-1 mr-1">
+      <button id="back-to-top" class="btn btn-secondary ml-auto">
+        <i class="fas fa-angle-double-up fa-lg"></i>
+      </button>
     </div>
+    <footer class="footer">
+      <div class="text-center bg-secondary text-light">
+        <small class="text-center">&#169; <span id="year" class="text-small"></span></small>
+      </div>
+    </footer>
     <script>
-      // Get the current year for the copyright
-      $('#year').text(new Date().getFullYear());
-$('[data-toggle="tooltip"]').tooltip();
-    </script>
+      $(document).ready(function(){
+        // Get the current year for the copyright
+        $('#year').text(new Date().getFullYear());
+        // tooltip init
+        $('[data-toggle="tooltip"]').tooltip();
+      })
 
+      // smooth scrolling
+      $("#back-to-top").click(function(e) {
+        e.preventDefault()
+        $('html, body').animate({
+          scrollTop: $("#main-header").offset().top
+        }, 500);
+      });
+
+      /*$(document).scroll(function () {
+          var y = $(this).scrollTop();
+          if (y > 300) {
+              $(".hide-under").fadeIn();
+              $(".hide-under").css("visibility", "visible");
+          } else {
+              $(".hide-under").fadeOut();
+              $(".hide-under").css("visibility", "hidden");
+          } 
+      });*/
+    </script>
   </body>
 </html>
