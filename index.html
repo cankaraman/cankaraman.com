@@ -178,22 +178,9 @@
           </div>
         </div>
       </div>
-      <div class="row mt-2 invisible">
-        <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12 justift-content-center">
-          <footer id="main-footer" class="p-2 bg-dark text-white rounded">
-            <div class="row">
-              <div class="col-md-6">
-                <a href="#" class="btn btn-outline-light">
-                  <i class="fas fa-cloud"></i> Download Resume
-                </a>
-              </div>
-            </div>
-          </footer>
-        </div>
-      </div>
     </div>
-    <div class="d-flex mb-1 mr-1">
-      <button id="back-to-top" class="btn btn-secondary ml-auto">
+    <div class="d-flex">
+      <button id="back-to-top" class="btn btn-secondary ml-auto fixed-bottom hide-under mb-5 mr-2">
         <i class="fas fa-angle-double-up fa-lg"></i>
       </button>
     </div>
@@ -218,16 +205,16 @@
         }, 500);
       });
 
-      /*$(document).scroll(function () {
+      $(document).scroll(function () {
           var y = $(this).scrollTop();
-          if (y > 300) {
+          if (y > 500) {
               $(".hide-under").fadeIn();
-              $(".hide-under").css("visibility", "visible");
+              //$(".hide-under").css("visibility", "visible");
           } else {
               $(".hide-under").fadeOut();
-              $(".hide-under").css("visibility", "hidden");
+              //$(".hide-under").css("visibility", "hidden");
           } 
-      });*/
+      });
     </script>
   </body>
 </html>
