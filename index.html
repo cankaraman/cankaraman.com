@@ -14,7 +14,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="manifest" href="img/site.webmanifest">
-        <!-- #f7f8f9 -->
+    <!-- #f7f8f9 -->
   </head>
   <body class="bg-light">
     <div class="container">
@@ -72,7 +72,7 @@
         <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12 justift-content-center">
           <h2 class="mb-3">my projects</h2>
           <div id="accordion">
-<div class="card">
+            <div class="card">
               <div class="card-header">
                 <h5>
                   <button class="d-flex pl-0 btn btn-block text-center card-btn" data-target="#collapse6" data-parent="#accordion" data-toggle="collapse">
@@ -80,12 +80,14 @@
                     <i class="fas fa-minus ml-auto"></i>
                   </button>
                 </h5>
-                <h6 class="ml-4 card-subtitle text-muted">A content-based recommeder system - 2020</h6>
+                <h6 class="ml-4 card-subtitle text-muted">Msc. Thesis - 2020</h6>
               </div>
               <div id="collapse6" class="collapse show">
                 <div class="card-body bg-light">
-                  For my Msc. thesis I've created a recommender system to be used spesifficly for recommending scientific papers. Experiments are made to decide which parts of papers (abstract, title, keyword etc.) can be used to recommend the most related papers to user's papers. Then a recommender system built around that information. 
-                  <br> Used: ......
+                  For my MSc. thesis I've created a content-based recommender system to be used specifically for recommending scientific papers. 
+                  Experiments are made to decide which parts of a paper (abstract, title, references etc.) provides the best content for content-based recommenders.  
+                  Then a recommender system built using that information. The recommender system is intagreted with a Django web application to be tested by users.
+                  <br> Used: Python, scikit-learn, NLP, Django, Postgresql, Content-based filtering
 
                 </div>
               </div>
@@ -102,7 +104,7 @@
               </div>
               <div id="collapse1" class="collapse show">
                 <div class="card-body bg-light">
-                  Created a website from stract using HTML, Bootstrap and JQuery. Can be seen here: <a href="http://ehavk.org">ehavk.org</a>
+                  Created a website from scratch using HTML, CSS, Bootstrap and JQuery. Can be seen here: <a href="http://ehavk.org">ehavk.org</a> - <a href="http://github.com/cankaraman/ehavk.org">github repo</a>
                 </div>
               </div>
             </div>
@@ -114,15 +116,16 @@
                     <i class="fas fa-minus ml-auto"></i>
                   </button>
                 </h5>
-                <h6 class="ml-4 card-subtitle text-muted">A twitter like CRUD app - Udemy Course</h6>
+                <h6 class="ml-4 card-subtitle text-muted">A twitter like web app - Udemy Course</h6>
               </div>
               <div id="collapse2" class="collapse show">
                 <div class="card-body bg-light">
-                  implemented twitter clone with basic functionalities such as tweet, reweet, reply, follow etc.
-                  django, jquery, postgresql, aws.
-                  can be seen here <a href="https://tweetme.cankaraman.com">tweetme.cankaraman.com</a> 
+                  Followed a tutorial to create a twitter like web app.
+                  Implemented basic twitter functionality such as tweet, retweet, follow user etc.
+                  Created dynamic pages with REST APIs and ajax.
+                  <br>Used: Django, Python, Bootstrap, Django Rest Framework, Jquery. 
+                  Can be seen here: <a href="https://tweetme.cankaraman.com">tweetme.cankaraman.com</a> - <a href="https://github.com/cankaraman/tweetme">github repo</a>
                   <br>
-                <a href="https://github.com/cankaraman/tweetme">github repo</a>
                 </div>
               </div>
             </div>
@@ -138,7 +141,8 @@
               </div>
               <div id="collapse3" class="collapse show">
                 <div class="card-body bg-light">
-                  map reduce, implement movie recommender ...
+                  Learned basics of Apache Spark and its librarires, created map/reduce programs. Created a movie recommender using imdb data. 
+                  <br>Used: Spark, Scala, Collaborative Filtering, Streaming, MLlib
                 </div>
               </div>
             </div>
@@ -150,14 +154,14 @@
                     <i class="fas fa-minus ml-auto"></i>
                   </button>
                 </h5>
-                <h6 class="ml-4 card-subtitle text-muted">sharepoint workflow application</h6>
+                <h6 class="ml-4 card-subtitle text-muted">sharepoint workflow application - 2018</h6>
               </div>
               <div id="collapse4" class="collapse show">
                 <div class="card-body bg-light">
-                  worked mostly independently
-                  update 2010 sharepoint to 2016. Re-implement workflow to new engine, workflow funtioned with less bugs.
-                  designed better ui with devexpress which made the system user friendly ...
-                
+                  Updated and refactored components of an older sharepoint workflow application.
+                  Redesigned user interface with devexpress  which made the app much more user friendly.
+                  Re-implemented workflow mechanism with new states, this reduced state transition bugs &amp; delays. Refactored SOAP webservice in-points to work with the new system. 
+                  <br>Used: ASP.NET, C#, Sharepoint 2016, Devexpress, MSSQL, Entity Framework 
                 </div>
               </div>
             </div>
@@ -169,12 +173,13 @@
                     <i class="fas fa-minus ml-auto"></i>
                   </button>
                 </h5>
-                <h6 class="ml-4 card-subtitle text-muted">a sharepoint workflow application</h6>
+                <h6 class="ml-4 card-subtitle text-muted">a sharepoint workflow application - 2018</h6>
               </div>
               <div id="collapse5" class="collapse show">
                 <div class="card-body bg-light">
-                  My role in this project was maintaining features and workflow states. .... implement sql reports
-                
+                  Maintained one of the core application used by a refinery company. 
+                  Added new workflow states, features, and fixed bugs. Created complex MSSQL reports. Implemented a feature where I parsed excel sheets to update the database.
+                  <br>Used: ASP.NET, C#, Sharepoint 2013, Devexpress, MSSQL, Entity Framework, SQL Server Reporting Services
                 </div>
               </div>
             </div>
@@ -200,33 +205,33 @@
         $('[data-toggle="tooltip"]').tooltip();
       })
 
-      // smooth scrolling
-      $("#back-to-top").click(function(e) {
-        e.preventDefault()
-        $('html, body').animate({
-          scrollTop: $("#main-header").offset().top
-        }, 500);
-      });
+// smooth scrolling
+$("#back-to-top").click(function(e) {
+  e.preventDefault()
+  $('html, body').animate({
+    scrollTop: $("#main-header").offset().top
+  }, 500);
+});
 
-      $(".card-btn").click(function(e){
-        var cardOpenClass = "fas fa-minus ml-auto"
-        var cardClosedClass = "fas fa-plus ml-auto"
-        var currentClass = $(this).find("i").attr("class")
-        if (currentClass == cardOpenClass){
-            $(this).find("i").attr("class", cardClosedClass)
-        } else {
-            $(this).find("i").attr("class", cardOpenClass)
-        }
-      });
+$(".card-btn").click(function(e){
+  var cardOpenClass = "fas fa-minus ml-auto"
+  var cardClosedClass = "fas fa-plus ml-auto"
+  var currentClass = $(this).find("i").attr("class")
+  if (currentClass == cardOpenClass){
+    $(this).find("i").attr("class", cardClosedClass)
+  } else {
+    $(this).find("i").attr("class", cardOpenClass)
+  }
+});
 
-      $(document).scroll(function () {
-          var y = $(this).scrollTop();
-          if (y > 400) {
-              $(".hide-under").fadeIn();
-          } else {
-              $(".hide-under").fadeOut();
-          } 
-      });
+$(document).scroll(function () {
+  var y = $(this).scrollTop();
+  if (y > 400) {
+    $(".hide-under").fadeIn();
+  } else {
+    $(".hide-under").fadeOut();
+  } 
+});
     </script>
   </body>
 </html>
